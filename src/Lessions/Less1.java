@@ -7,6 +7,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.OutputKeys;
 import java.io.File;
+import java.util.Scanner;
 
 public class Less1 {
     public static void main(String[] args) {
@@ -62,6 +63,36 @@ public class Less1 {
 
             System.out.println("XML-файл готов");
 
+            Scanner scan =new Scanner(System.in);
+            System.out.println("Введите название книги ");
+            String title = scan.nextLine();
+            System.out.println("Введите название книги ");
+            String author = scan.nextLine();
+            System.out.println("Введите название книги ");
+            String year = scan.nextLine();
+
+            Element book3 = doc.createElement("book");
+            rootElement.appendChild(book3);
+
+            Element title3 = doc.createElement("title");
+            title3.appendChild(doc.createTextNode(title));
+            book3.appendChild(title3);
+
+            Element author3 = doc.createElement("author");
+            author3.appendChild(doc.createTextNode(author));
+            book3.appendChild(author3);
+
+            Element year3 = doc.createElement("year");
+            year3.appendChild(doc.createTextNode(year));
+            book3.appendChild(year3);
+
+            doc.setXmlStandalone(true);
+            doc.normalizeDocument();
+            source = new javax.xml.transform.dom.DOMSource(doc);
+            result = new javax.xml.transform.stream.StreamResult(new File("src/Lessions/Files/Less1.xml"));
+            transformer.transform(source, result);
+
+            System.out.println("XML-файл готов");
 
         } catch (Exception pse) {
             pse.printStackTrace();

@@ -12,6 +12,8 @@ import java.util.Scanner;
 
 public class Less2JSON {
     public static void main(String[] args){
+        Scanner scan =new Scanner(System.in);
+
         JSONObject library =  new JSONObject();
         JSONArray books = new JSONArray();
 
@@ -46,7 +48,17 @@ public class Less2JSON {
         }catch(Exception ex){
             ex.printStackTrace();
         }
-
+        System.out.println("Введите название книги для удаления");
+        String name = scan.nextLine();
+        books = deleteBook(books, name);
+        library.remove("books");
+        library.put("books", books);
+        try(FileWriter file =  new FileWriter("src/Lessions/Files/Less2.json")){
+            file.write(library.toJSONString());
+            System.out.println("JSON файл успешно создан");
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
     }
     public static JSONObject newBook(){
         Scanner scan =new Scanner(System.in);
@@ -62,5 +74,9 @@ public class Less2JSON {
         newbook.put("author",author);
         newbook.put("yaer", year);
         return newbook;
+    }
+    public static JSONArray deleteBook(JSONArray books, String name){
+        books.remove(name);
+        return books;
     }
 }

@@ -4,27 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48b380a9-62a2-4705-94cf-648f7ecc6cc1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_logging_log4j_core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_poi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_poi_ooxml.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jsoup.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab10.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lessions/Less1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lessions/Less1Read.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lessions/Less2JSON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lessions/Less2Read.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lessions/Less3HTML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lessions/Less4Exel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lessions/Less4Read.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="48b380a9-62a2-4705-94cf-648f7ecc6cc1" name="Changes" comment="Create lessions and i did it">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lessions/Less1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lessions/Less1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lessions/Less2JSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lessions/Less2JSON.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lessions/Less4Exel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lessions/Less4Exel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +52,9 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Less2JSON">
-    <configuration name="Less2JSON" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lessions.Less2JSON" />
+  <component name="RunManager" selected="Application.Less1">
+    <configuration name="Less1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lessions.Less1" />
       <module name="Lab10" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +66,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Less2Read" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lessions.Less2Read" />
+    <configuration name="Less2JSON" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lessions.Less2JSON" />
       <module name="Lab10" />
       <extension name="coverage">
         <pattern>
@@ -136,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Less1" />
         <item itemvalue="Application.Less2JSON" />
         <item itemvalue="Application.Less4Read" />
         <item itemvalue="Application.Less4Exel" />
         <item itemvalue="Application.Less3HTML" />
-        <item itemvalue="Application.Less2Read" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +137,30 @@
       <option name="presentableId" value="Default" />
       <updated>1711199028831</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create lessions and i did it">
+      <option name="closed" value="true" />
+      <created>1711298418055</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711298418055</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create lessions and i did it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create lessions and i did it" />
   </component>
 </project>

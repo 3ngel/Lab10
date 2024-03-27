@@ -8,6 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Less4Exel {
     public static void main(String[] args){
@@ -29,6 +30,19 @@ public class Less4Exel {
             dataRow2.createCell(0).setCellValue("Компьютер");
             dataRow2.createCell(1).setCellValue("Процессор: Intel core 15");
             dataRow2.createCell(2).setCellValue(25000.00);
+
+            Scanner scan =new Scanner(System.in);
+            System.out.println("Введите название товара ");
+            String name = scan.nextLine();
+            System.out.println("Введите состав");
+            String cont = scan.nextLine();
+            System.out.println("Введите стоимость ");
+            String price = scan.nextLine();
+
+            Row dataRow3 = sheet.createRow(2);
+            dataRow3.createCell(0).setCellValue(name);
+            dataRow3.createCell(1).setCellValue(cont);
+            dataRow3.createCell(2).setCellValue(price);
 
             String filePath = "src/Lessions/Files/Less4.xlsx";
             FileOutputStream outputStream  = new FileOutputStream(filePath);
